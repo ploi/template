@@ -1,0 +1,10 @@
+#!/usr/bin/env php
+<?php
+
+$css = file_get_contents('public/css/app.css');
+
+$public = file_get_contents('public/index.html');
+
+$public = str_replace('<link href="/css/app.css" rel="stylesheet">', '<style>' . $css . '</style>', $public);
+
+file_put_contents('dist/index.html', $public);
