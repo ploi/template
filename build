@@ -8,3 +8,7 @@ $public = file_get_contents('public/index.html');
 $public = str_replace('<link href="/css/app.css" rel="stylesheet">', '<style>' . $css . '</style>', $public);
 
 file_put_contents('dist/index.html', $public);
+
+echo PHP_EOL;
+echo "CSS & index.html generation successfull, grab the dist/index.html file.";
+echo PHP_EOL;
