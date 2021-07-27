@@ -15,4 +15,4 @@ Clone the repository
 
 ## Building
 
-`php build`
+`npm run build`
